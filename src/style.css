@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Source Sans 3', system-ui, sans-serif;
+  --font-heading: 'Lexend', system-ui, sans-serif;
+  --color-primary: #1E3A8A; /* Blue 900 for headings/trust */
+  --color-secondary: #2563EB; /* Blue 600 for primary CTA */
+  --color-accent: #F59E0B; /* Amber 500 */
+  --color-background: #FFFFFF;
+  --color-foreground: #0F172A; /* Slate 900 */
+  --color-muted: #F8FAFC; /* Slate 50 */
+  --color-muted-foreground: #64748B; /* Slate 500 */
+  --color-border: #E2E8F0; /* Slate 200 */
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: var(--font-heading);
+}
+
+.focus-ring {
+  @apply focus:outline-none focus-visible:ring-4 focus-visible:ring-blue-500/50 rounded-md;
+}
+
+/* Subtle background grid pattern for technical feel */
+.bg-grid-pattern {
+  background-image: 
+    linear-gradient(to right, #f1f5f9 1px, transparent 1px),
+    linear-gradient(to bottom, #f1f5f9 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px) rotate(var(--tw-rotate, 0deg)); }
+  100% { transform: translateY(-30px) rotate(var(--tw-rotate, 0deg)); }
+}
+
+@keyframes fadeInIcon {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.currency-icon {
+  opacity: 0;
+  animation: 
+    fadeInIcon 1.5s ease-out var(--fade-delay, 1s) forwards, 
+    float var(--float-duration, 6s) ease-in-out infinite alternate;
+}
+
+@keyframes arrow-float {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(4px); }
+}
+
+@keyframes blob {
+  0% { transform: translate(0px, 0px) scale(1); }
+  33% { transform: translate(30px, -50px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.9); }
+  100% { transform: translate(0px, 0px) scale(1); }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+@keyframes draw-line {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Investocarto | Smarter Retail Trading</title>
+    <!-- We're using standard icons. Lucide icons via CDN (unpkg) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body class="min-h-screen flex flex-col font-sans bg-background text-foreground antialiased relative">
+    
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+          <div class="flex items-center gap-2">
+            <!-- Placeholder Logo -->
+            <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-white">
+              <i data-lucide="trending-up" class="h-5 w-5"></i>
+            </div>
+            <span class="font-heading text-xl font-bold tracking-tight text-primary">investocarto</span>
+          </div>
+          <nav class="hidden md:flex gap-8">
+            <a href="#features" class="text-sm font-normal text-muted-foreground/80 hover:text-foreground transition-colors focus-ring">Features</a>
+            <a href="#support" class="text-sm font-normal text-muted-foreground/80 hover:text-foreground transition-colors focus-ring">Support</a>
+            <a href="#pricing" class="text-sm font-normal text-muted-foreground/80 hover:text-foreground transition-colors focus-ring">Pricing</a>
+          </nav>
+          <div class="flex items-center gap-4">
+            <a href="#" class="hidden sm:inline-flex text-sm font-normal text-muted-foreground/80 hover:text-foreground transition-colors focus-ring px-3 py-2">
+              Log In
+            </a>
+            <a href="#" class="inline-flex h-10 items-center justify-center rounded-md bg-secondary px-6 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-secondary/90 focus-ring">
+              Start Trading
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-1 w-full relative">
+      <!-- Background pattern -->
+      <div class="absolute inset-0 bg-grid-pattern -z-10 opacity-50"></div>
+
+      <!-- Hero Section -->
+      <section class="w-full py-24 md:py-32 lg:py-40 flex items-center justify-center relative overflow-hidden">
+        <!-- Subtle Apple-like Ambient Glow -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[60%] w-[600px] h-[500px] bg-gradient-to-tr from-blue-400/20 to-purple-400/20 rounded-full blur-[120px] -z-10 opacity-70"></div>
+        
+        <!-- Floating Currency Icons -->
+        <div class="currency-icon absolute top-[15%] left-[5%] text-slate-200 rotate-12 hidden lg:block" style="--fade-delay: 1.2s; --float-duration: 7s;">
+          <i data-lucide="dollar-sign" class="w-24 h-24 stroke-[1.5]"></i>
+        </div>
+        <div class="currency-icon absolute top-[35%] left-[18%] text-slate-200 -rotate-6 hidden lg:block" style="--fade-delay: 1.8s; --float-duration: 8.5s;">
+          <i data-lucide="euro" class="w-16 h-16 stroke-[1.5]"></i>
+        </div>
+        <div class="currency-icon absolute bottom-[15%] left-[10%] text-slate-200 -rotate-12 hidden lg:block" style="--fade-delay: 1.5s; --float-duration: 6s;">
+          <i data-lucide="indian-rupee" class="w-32 h-32 stroke-1"></i>
+        </div>
+        
+        <div class="currency-icon absolute top-[20%] right-[8%] text-slate-200 -rotate-[15deg] hidden lg:block" style="--fade-delay: 1.4s; --float-duration: 7.5s;">
+          <i data-lucide="pound-sterling" class="w-20 h-20 stroke-[1.5]"></i>
+        </div>
+        <div class="currency-icon absolute top-[45%] right-[22%] text-slate-200 rotate-[10deg] hidden lg:block" style="--fade-delay: 2.0s; --float-duration: 9s;">
+          <i data-lucide="bitcoin" class="w-14 h-14 stroke-[1.5]"></i>
+        </div>
+        <div class="currency-icon absolute bottom-[18%] right-[12%] text-slate-200 rotate-[8deg] hidden lg:block" style="--fade-delay: 1.7s; --float-duration: 6.5s;">
+          <i data-lucide="japanese-yen" class="w-28 h-28 stroke-1"></i>
+        </div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
+          <div class="relative inline-flex overflow-hidden rounded-full p-[1px] mb-8 shadow-sm">
+            <span class="absolute inset-[-1000%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(red,orange,yellow,green,blue,indigo,violet,red)] opacity-80"></span>
+            <div class="relative inline-flex items-center rounded-full bg-muted px-3 py-1 text-sm font-medium text-muted-foreground w-full h-full">
+              <span class="flex h-2 w-2 rounded-full bg-accent mr-2"></span>
+              Built for everyday retail investors
+            </div>
+          </div>
+          
+          <h1 class="font-heading text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight max-w-4xl mb-6">
+            <span class="bg-gradient-to-br from-slate-900 to-slate-600 bg-clip-text text-transparent">Trade with precision.</span> <br />
+            <span class="bg-gradient-to-br from-blue-600 to-blue-400 bg-clip-text text-transparent">Pay a fraction in fees.</span>
+          </h1>
+          
+          <p class="max-w-2xl text-lg md:text-xl text-muted-foreground mb-10 leading-relaxed">
+            High broker fees are quietly eating your <span class="underline decoration-[0.5px] decoration-muted-foreground/60 underline-offset-4">profits</span>.<br class="hidden sm:block" />
+            We fix this with <span class="underline decoration-[0.5px] decoration-muted-foreground/60 underline-offset-4">lightning-fast execution</span> and a $0 flat-fee structure.<br class="hidden sm:block" />
+            Secure your early-access spot <span class="underline decoration-[0.5px] decoration-muted-foreground/60 underline-offset-4">before the waitlist closes</span>.
+          </p>
+          
+          <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center">
+            <a href="#" class="inline-flex h-12 items-center justify-center rounded-full bg-gradient-to-b from-blue-500 to-blue-600 bg-[length:100%_200%] bg-top px-8 text-base font-bold text-white shadow-[0_8px_20px_rgb(37_99_235_/_0.3)] transition-all duration-500 hover:bg-bottom hover:-translate-y-1 hover:shadow-[0_12px_24px_rgb(37_99_235_/_0.4)] active:translate-y-0 focus-ring group">
+              Book Your Free Consultation <i data-lucide="arrow-right" class="ml-2 w-4 h-4 group-hover:animate-[arrow-float_1s_ease-in-out_infinite]"></i>
+            </a>
+          </div>
+          
+          <!-- Trust Indicators -->
+          <div class="mt-16 pt-8 border-t border-border flex flex-wrap justify-center gap-x-12 gap-y-6 items-center text-muted-foreground text-sm font-medium w-full max-w-3xl opacity-70">
+            <div class="flex items-center gap-2"><i data-lucide="shield-check" class="w-5 h-5"></i> Bank-grade Security</div>
+            <div class="flex items-center gap-2"><i data-lucide="users" class="w-5 h-5"></i> 1M+ Retail Traders</div>
+            <div class="flex items-center gap-2"><i data-lucide="award" class="w-5 h-5"></i> Regulated Broker</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- USP Section -->
+      <section id="features" class="w-full py-24 bg-slate-50 relative overflow-hidden border-t border-slate-200/60">
+        <!-- Dot Pattern Background -->
+        <div class="absolute inset-0 bg-[radial-gradient(#94a3b8_1.5px,transparent_1.5px)] [background-size:24px_24px] opacity-80 pointer-events-none"></div>
+        
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div class="text-center mb-16">
+            <h2 class="font-heading text-4xl md:text-5xl font-bold tracking-tight mb-4">
+              <span class="bg-gradient-to-br from-zinc-900 via-zinc-700 to-zinc-500 bg-clip-text text-transparent">All signal. No noise.</span>
+            </h2>
+            <p class="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed text-balance">
+              We cut the jargon and focus on what actually helps you trade smarter.
+            </p>
+          </div>
+          
+          <div class="relative w-full">
+            <!-- Animated Background Blobs Behind Grid -->
+            <div class="absolute inset-0 pointer-events-none z-0">
+              <div class="absolute -top-32 -left-32 w-[600px] h-[600px] bg-blue-300/20 rounded-full mix-blend-multiply filter blur-[100px] animate-blob"></div>
+              <div class="absolute -bottom-32 -right-32 w-[600px] h-[600px] bg-purple-300/20 rounded-full mix-blend-multiply filter blur-[100px] animate-blob animation-delay-4000"></div>
+            </div>
+            
+            <div class="relative z-10 grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-6">
+              <!-- Card 1: Tall Left (On-Demand Call Support) -->
+            <div class="md:col-span-1 md:row-span-2 relative p-[1px] group w-full rounded-3xl shadow-sm">
+              <div class="absolute inset-0 rounded-3xl overflow-hidden pointer-events-none"><div class="absolute inset-[-1000%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_0deg,#6366f1,#a855f7,#ec4899,#f43f5e,#f97316,#6366f1)] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div></div>
+              <div class="relative h-full flex flex-col bg-white rounded-[calc(1.5rem-1px)] border border-slate-200/60 p-8 md:p-10 overflow-hidden group-hover:border-transparent transition-colors duration-500">
+                <h3 class="font-heading text-xl md:text-2xl font-medium text-slate-800 tracking-tight mb-4">
+                  <span class="relative inline-block z-10">On-Demand Call Support<svg class="absolute -bottom-2 left-0 w-full h-3 text-indigo-400 stroke-current -z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" viewBox="0 0 100 20" preserveAspectRatio="none"><path fill="none" stroke-width="4" stroke-linecap="round" d="M2,15 Q25,5 50,15 T98,15" style="stroke-dasharray: 120; stroke-dashoffset: 120; animation: draw-line 2s ease-in-out infinite alternate;" /></svg></span>
+                </h3>
+              <p class="text-base text-slate-500 leading-relaxed">
+                Stuck on a trade or need account help? Speak directly to our financial support team anytime. No bots, just real humans ready to assist.
+              </p>
+              <div class="mt-10 flex-1 w-full bg-indigo-50/50 rounded-2xl border border-indigo-100/50 flex flex-col items-center justify-center relative overflow-hidden min-h-[200px]">
+                <div class="absolute w-32 h-32 bg-indigo-400/20 rounded-full blur-2xl animate-pulse"></div>
+                
+                <!-- Animated Illustration: Floating Chat & Call -->
+                <div class="relative w-32 h-32 flex items-center justify-center group-hover:scale-105 transition-transform duration-500">
+                  <div class="absolute w-24 h-24 border border-indigo-200 rounded-full animate-[ping_3s_infinite]"></div>
+                  <div class="absolute bg-white rounded-2xl rounded-tr-sm p-4 shadow-lg -top-2 -right-4 animate-[bounce_4s_infinite_ease-in-out]">
+                    <div class="flex gap-1.5">
+                      <div class="w-2 h-2 bg-indigo-400 rounded-full animate-bounce" style="animation-delay: 0ms;"></div>
+                      <div class="w-2 h-2 bg-indigo-400 rounded-full animate-bounce" style="animation-delay: 150ms;"></div>
+                      <div class="w-2 h-2 bg-indigo-400 rounded-full animate-bounce" style="animation-delay: 300ms;"></div>
+                    </div>
+                  </div>
+                  <div class="absolute bg-indigo-600 rounded-2xl rounded-bl-sm p-4 shadow-xl bottom-2 -left-4 animate-[bounce_4s_infinite_ease-in-out_1s]">
+                    <i data-lucide="phone" class="w-6 h-6 text-white animate-pulse"></i>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Card 2: Top Right Wide (Transparent Brokerage) -->
+            <div class="md:col-span-2 md:row-span-1 relative p-[1px] group w-full rounded-3xl shadow-sm">
+              <div class="absolute inset-0 rounded-3xl overflow-hidden pointer-events-none"><div class="absolute inset-[-1000%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_0deg,#6366f1,#a855f7,#ec4899,#f43f5e,#f97316,#6366f1)] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div></div>
+              <div class="relative h-full flex flex-col md:flex-row items-center gap-8 md:gap-12 bg-white rounded-[calc(1.5rem-1px)] border border-slate-200/60 p-8 md:p-10 overflow-hidden group-hover:border-transparent transition-colors duration-500">
+                <div class="flex-1">
+                  <h3 class="font-heading text-xl md:text-2xl font-medium text-slate-800 tracking-tight mb-4">
+                    <span class="relative inline-block z-10">Transparent, Low Brokerage<svg class="absolute -bottom-2 left-0 w-full h-3 text-purple-400 stroke-current -z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" viewBox="0 0 100 20" preserveAspectRatio="none"><path fill="none" stroke-width="4" stroke-linecap="round" d="M2,15 Q25,5 50,15 T98,15" style="stroke-dasharray: 120; stroke-dashoffset: 120; animation: draw-line 2s ease-in-out infinite alternate;" /></svg></span>
+                  </h3>
+                <p class="text-base text-slate-500 leading-relaxed max-w-xl">
+                  Keep more of your profits. We offer some of the most competitive, flat-rate brokerage fees in the industry with zero hidden charges.
+                </p>
+              </div>
+              <div class="w-full md:w-auto md:flex-1 h-full min-h-[160px] bg-slate-50/50 rounded-2xl border border-slate-100 p-8 flex flex-col items-center justify-center relative overflow-hidden">
+                <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-purple-400/20 rounded-full blur-3xl"></div>
+                
+                <!-- Animated Illustration: Floating Zero Fee Receipt -->
+                <div class="relative flex items-center justify-center w-full h-full group-hover:scale-105 transition-transform duration-500 min-h-[140px]">
+                  <div class="absolute bg-white w-28 h-36 rounded-xl shadow-xl border border-slate-100 p-4 flex flex-col animate-[bounce_5s_infinite_ease-in-out]">
+                    <div class="w-full h-2 bg-slate-100 rounded-full mb-3"></div>
+                    <div class="w-3/4 h-2 bg-slate-100 rounded-full mb-3"></div>
+                    <div class="w-5/6 h-2 bg-slate-100 rounded-full mb-6"></div>
+                    <div class="mt-auto pt-3 border-t-2 border-dashed border-slate-100 flex justify-between items-center">
+                      <div class="text-xs font-bold text-slate-400">FEE</div>
+                      <div class="bg-purple-100 text-purple-600 text-sm font-black px-2 py-0.5 rounded-md animate-pulse">$0</div>
+                    </div>
+                  </div>
+                  <div class="absolute -right-6 top-2 bg-purple-600 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg -rotate-12 animate-[bounce_5s_infinite_ease-in-out_0.5s]">Free!</div>
+                </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Card 3: Bottom Right Wide (Advanced Trading Support) -->
+            <div class="md:col-span-2 md:row-span-1 relative p-[1px] group w-full rounded-3xl shadow-sm">
+              <div class="absolute inset-0 rounded-3xl overflow-hidden pointer-events-none"><div class="absolute inset-[-1000%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_0deg,#6366f1,#a855f7,#ec4899,#f43f5e,#f97316,#6366f1)] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div></div>
+              <div class="relative h-full flex flex-col md:flex-row items-center gap-8 md:gap-12 bg-white rounded-[calc(1.5rem-1px)] border border-slate-200/60 p-8 md:p-10 overflow-hidden group-hover:border-transparent transition-colors duration-500">
+                <div class="flex-1">
+                  <h3 class="font-heading text-xl md:text-2xl font-medium text-slate-800 tracking-tight mb-4">
+                    <span class="relative inline-block z-10">Advanced Trading Support<svg class="absolute -bottom-2 left-0 w-full h-3 text-blue-400 stroke-current -z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" viewBox="0 0 100 20" preserveAspectRatio="none"><path fill="none" stroke-width="4" stroke-linecap="round" d="M2,15 Q25,5 50,15 T98,15" style="stroke-dasharray: 120; stroke-dashoffset: 120; animation: draw-line 2s ease-in-out infinite alternate;" /></svg></span>
+                  </h3>
+                <p class="text-base text-slate-500 leading-relaxed">
+                  Execute trades with lightning speed. Access clear, actionable charts, and leverage our integrated analysis tools designed for retail investors.
+                </p>
+              </div>
+              <div class="w-full md:w-auto md:flex-1 h-full min-h-[160px] bg-blue-50/50 rounded-2xl border border-blue-100/50 flex flex-col items-center justify-center relative overflow-hidden">
+                <div class="absolute -bottom-10 -right-10 w-48 h-48 bg-blue-400/20 rounded-full blur-3xl"></div>
+                
+                <!-- Animated Illustration: Dynamic Chart -->
+                <div class="relative w-full max-w-[200px] h-32 flex items-end justify-between px-2 pb-2 gap-3 group-hover:scale-105 transition-transform duration-500">
+                  <div class="w-full bg-blue-200 rounded-t-lg animate-[pulse_2s_infinite] h-[30%] relative">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-blue-300 rounded-t-lg"></div>
+                  </div>
+                  <div class="w-full bg-blue-300 rounded-t-lg animate-[pulse_2.5s_infinite] h-[55%] relative">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-blue-400 rounded-t-lg"></div>
+                  </div>
+                  <div class="w-full bg-blue-400 rounded-t-lg animate-[pulse_3s_infinite] h-[40%] relative">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-blue-500 rounded-t-lg"></div>
+                  </div>
+                  <div class="w-full bg-blue-500 rounded-t-lg h-[85%] relative shadow-lg">
+                    <div class="absolute -top-4 -right-6 bg-white border-2 border-blue-500 text-blue-600 text-[10px] font-bold px-2 py-1 rounded-full shadow-md animate-bounce">+24%</div>
+                    <div class="absolute top-0 left-0 w-full h-1 bg-blue-400 rounded-t-lg"></div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Visual Feature Highlight -->
+      <section class="w-full py-24 overflow-hidden bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col lg:flex-row items-center gap-16">
+            
+            <!-- Left Text Content -->
+            <div class="flex-1 text-left relative z-10 w-full flex flex-col justify-center">
+              <div id="feature-text-content" class="transition-opacity duration-300 ease-in-out opacity-100 min-h-[480px] lg:min-h-[380px]">
+                <h2 class="font-heading text-4xl md:text-5xl font-bold tracking-tight mb-6">
+                  <span id="feature-title" class="bg-gradient-to-br from-slate-900 to-slate-600 bg-clip-text text-transparent">Clean interface, perfect clarity.</span>
+                </h2>
+                <p id="feature-desc" class="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
+                  Whether you're placing your first order or your thousandth, our interface is designed to keep you focused on the market. Say goodbye to cluttered screens.
+                </p>
+                <ul id="feature-list" class="space-y-4 mb-10">
+                  <li class="flex items-start gap-3">
+                    <div class="mt-1 bg-blue-500/10 p-1 rounded-full text-blue-600"><i data-lucide="check" class="w-4 h-4"></i></div>
+                    <span class="text-slate-700 font-medium text-lg">Real-time market data directly from exchanges.</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <div class="mt-1 bg-blue-500/10 p-1 rounded-full text-blue-600"><i data-lucide="check" class="w-4 h-4"></i></div>
+                    <span class="text-slate-700 font-medium text-lg">One-click order execution.</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <div class="mt-1 bg-blue-500/10 p-1 rounded-full text-blue-600"><i data-lucide="check" class="w-4 h-4"></i></div>
+                    <span class="text-slate-700 font-medium text-lg">Seamless portfolio tracking on desktop and mobile.</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <!-- Navigation Controls & Progress -->
+              <div class="flex flex-col items-start gap-4">
+                <div class="flex items-center gap-4">
+                  <button id="feature-prev" class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-b from-blue-500 to-blue-600 bg-[length:100%_200%] bg-top text-white transition-all duration-500 hover:bg-bottom active:scale-95 focus-ring group">
+                    <i data-lucide="arrow-left" class="w-5 h-5 group-hover:-translate-x-0.5 transition-transform duration-300"></i>
+                  </button>
+                  <button id="feature-next" class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-b from-blue-500 to-blue-600 bg-[length:100%_200%] bg-top text-white transition-all duration-500 hover:bg-bottom active:scale-95 focus-ring group">
+                    <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-0.5 transition-transform duration-300"></i>
+                  </button>
+                </div>
+                
+                <!-- Auto-cycle Progress Pill -->
+                <div class="inline-flex items-center bg-slate-100 border border-slate-200/60 rounded-full px-3 py-1.5 shadow-sm">
+                  <div class="w-16 h-1 bg-slate-200 rounded-full overflow-hidden">
+                    <div id="slider-progress" class="h-full bg-slate-400 w-0"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Right Stacked Cards -->
+            <div class="flex-1 w-full relative">
+              <div class="absolute inset-0 bg-gradient-to-tr from-blue-500/20 to-purple-500/20 rounded-[2rem] transform rotate-3 scale-105 -z-10 blur-xl"></div>
+              
+              <!-- Cards Container -->
+              <div class="relative w-full aspect-[4/3] pr-8 pb-10 md:pr-12 md:pb-12">
+                
+                <!-- Card 1 -->
+                <div class="feature-card absolute inset-0 md:inset-auto md:w-[calc(100%-3rem)] md:h-[calc(100%-3rem)] rounded-[2rem] overflow-hidden shadow-2xl border border-slate-200 bg-white transition-all duration-700 ease-out z-30 scale-100 translate-x-0 opacity-100 transform origin-left">
+                  <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1200&auto=format&fit=crop" alt="Interface" class="w-full h-full object-cover">
+                  <!-- Overlay Widget -->
+                  <div class="absolute bottom-8 left-8 bg-white/90 backdrop-blur-md p-4 pr-6 rounded-2xl shadow-xl border border-white/60 flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600"><i data-lucide="layout" class="w-5 h-5"></i></div>
+                    <div>
+                       <div class="text-xs text-slate-500 font-semibold uppercase tracking-wider mb-0.5">Layout</div>
+                       <div class="text-base font-bold text-slate-900 leading-none">Simplified</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="feature-card absolute inset-0 md:inset-auto md:w-[calc(100%-3rem)] md:h-[calc(100%-3rem)] rounded-[2rem] overflow-hidden shadow-2xl border border-slate-200 bg-white transition-all duration-700 ease-out z-20 scale-95 translate-x-8 translate-y-4 opacity-60 transform origin-left pointer-events-none">
+                  <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop" alt="Analytics" class="w-full h-full object-cover">
+                  <!-- Overlay Widget -->
+                  <div class="absolute top-8 left-8 bg-white/90 backdrop-blur-md p-4 pr-6 rounded-2xl shadow-xl border border-white/60 flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center text-purple-600"><i data-lucide="bar-chart-3" class="w-5 h-5"></i></div>
+                    <div>
+                       <div class="text-xs text-slate-500 font-semibold uppercase tracking-wider mb-0.5">Analytics</div>
+                       <div class="text-base font-bold text-slate-900 leading-none">Pro Tools</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="feature-card absolute inset-0 md:inset-auto md:w-[calc(100%-3rem)] md:h-[calc(100%-3rem)] rounded-[2rem] overflow-hidden shadow-2xl border border-slate-200 bg-white transition-all duration-700 ease-out z-10 scale-90 translate-x-16 translate-y-8 opacity-0 transform origin-left pointer-events-none">
+                  <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=1200&auto=format&fit=crop" alt="Security" class="w-full h-full object-cover">
+                  <!-- Overlay Widget -->
+                  <div class="absolute bottom-12 right-8 bg-white/90 backdrop-blur-md p-4 pr-6 rounded-2xl shadow-xl border border-white/60 flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600"><i data-lucide="shield-check" class="w-5 h-5"></i></div>
+                    <div>
+                       <div class="text-xs text-slate-500 font-semibold uppercase tracking-wider mb-0.5">Security</div>
+                       <div class="text-base font-bold text-slate-900 leading-none">Bank Grade</div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              
+
+              
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const featureData = [
+            {
+              title: "Clean interface, perfect clarity.",
+              desc: "Whether you're placing your first order or your thousandth, our interface is designed to keep you focused on the market. Say goodbye to cluttered screens.",
+              list: [
+                "Real-time market data directly from exchanges.",
+                "One-click order execution.",
+                "Seamless portfolio tracking on desktop and mobile."
+              ]
+            },
+            {
+              title: "Powerful pro analytics tools.",
+              desc: "Dive deep into market trends with our institutional-grade charting tools. Access real-time indicators and custom timeframes without the bloat.",
+              list: [
+                "Advanced interactive charting.",
+                "100+ technical indicators out of the box.",
+                "Multi-monitor workspace support."
+              ]
+            },
+            {
+              title: "Secure and instant execution.",
+              desc: "Your funds and trades are protected by enterprise-grade infrastructure. Execute trades in milliseconds with zero fear of slippage.",
+              list: [
+                "Military-grade 256-bit encryption.",
+                "Instant cross-border settlements.",
+                "99.99% proven uptime guarantee."
+              ]
+            }
+          ];
+
+          let currentSlide = 0;
+          const totalSlides = featureData.length;
+          
+          const titleEl = document.getElementById('feature-title');
+          const descEl = document.getElementById('feature-desc');
+          const listEl = document.getElementById('feature-list');
+          const leftCol = document.getElementById('feature-text-content');
+          const progressEl = document.getElementById('slider-progress');
+          
+          const cards = document.querySelectorAll('.feature-card');
+
+          let autoPlayInterval;
+          let progressAnimFrame;
+          let progressStart;
+          const SLIDE_DURATION = 5000;
+
+          function startAutoCycle() {
+            clearInterval(autoPlayInterval);
+            cancelAnimationFrame(progressAnimFrame);
+            
+            if (progressEl) progressEl.style.width = '0%';
+            progressStart = Date.now();
+            
+            function animate() {
+              const elapsed = Date.now() - progressStart;
+              let percent = (elapsed / SLIDE_DURATION) * 100;
+              if (percent > 100) percent = 100;
+              if (progressEl) progressEl.style.width = percent + '%';
+              if (percent < 100) {
+                progressAnimFrame = requestAnimationFrame(animate);
+              }
+            }
+            animate();
+            
+            autoPlayInterval = setInterval(() => {
+              currentSlide = (currentSlide + 1) % totalSlides;
+              updateContent();
+              startAutoCycle();
+            }, SLIDE_DURATION);
+          }
+          
+          function updateContent() {
+            const data = featureData[currentSlide];
+            
+            // Fade out text
+            leftCol.style.opacity = '0';
+            
+            setTimeout(() => {
+              titleEl.textContent = data.title;
+              descEl.textContent = data.desc;
+              listEl.innerHTML = data.list.map(item => 
+                '<li class="flex items-start gap-3">' +
+                  '<div class="mt-1 bg-blue-500/10 p-1 rounded-full text-blue-600"><i data-lucide="check" class="w-4 h-4"></i></div>' +
+                  '<span class="text-slate-700 font-medium text-lg">' + item + '</span>' +
+                '</li>'
+              ).join('');
+              
+              if(window.lucide) {
+                window.lucide.createIcons();
+              }
+              
+              // Fade in text
+              leftCol.style.opacity = '1';
+            }, 300);
+
+            // Update Stacked Cards Classes
+            cards.forEach((card, index) => {
+              let baseClasses = "feature-card absolute inset-0 md:inset-auto md:w-[calc(100%-3rem)] md:h-[calc(100%-3rem)] rounded-[2rem] overflow-hidden shadow-2xl border border-slate-200 bg-white transition-all duration-700 ease-out transform origin-left ";
+              
+              if (index === currentSlide) {
+                card.className = baseClasses + 'z-30 scale-100 translate-x-0 translate-y-0 opacity-100 pointer-events-auto';
+              } else if (index === (currentSlide + 1) % totalSlides) {
+                card.className = baseClasses + 'z-20 scale-95 translate-x-8 translate-y-4 opacity-60 pointer-events-none';
+              } else {
+                card.className = baseClasses + 'z-10 scale-90 translate-x-16 translate-y-8 opacity-0 pointer-events-none';
+              }
+            });
+          }
+
+          document.getElementById('feature-prev').addEventListener('click', () => {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            updateContent();
+            startAutoCycle();
+          });
+
+          document.getElementById('feature-next').addEventListener('click', () => {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateContent();
+            startAutoCycle();
+          });
+
+          // Init auto cycle
+          startAutoCycle();
+        });
+      </script>
+
+      <!-- CTA Section -->
+      <section class="w-full pt-20 pb-24 md:pt-24 md:pb-28 bg-background relative overflow-hidden border-t border-border">
+        <!-- Animated Background Blobs -->
+        <div class="absolute inset-0 pointer-events-none z-0 opacity-80">
+          <!-- Left Blob -->
+          <div class="absolute top-1/2 -left-48 w-[600px] h-[600px] -translate-y-1/2 bg-blue-400/40 rounded-full blur-[120px] animate-blob"></div>
+          <!-- Right Blob -->
+          <div class="absolute top-1/2 -right-48 w-[600px] h-[600px] -translate-y-1/2 bg-purple-400/40 rounded-full blur-[120px] animate-blob animation-delay-2000"></div>
+        </div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 flex flex-col items-center">
+          <h2 class="font-heading text-4xl md:text-5xl font-bold tracking-tight max-w-3xl mb-6 mx-auto">
+            <span class="bg-gradient-to-br from-slate-900 to-slate-600 bg-clip-text text-transparent">Ready to take control?</span>
+          </h2>
+          <p class="max-w-2xl mx-auto text-lg md:text-xl text-muted-foreground mb-10 leading-relaxed">
+            Join thousands of retail investors trading smarter with <span class="relative font-bold text-slate-900 z-10 whitespace-nowrap">Investocarto<svg class="absolute -bottom-2.5 left-0 w-full h-3 text-blue-500 stroke-current -z-10" viewBox="0 0 100 20" preserveAspectRatio="none"><path fill="none" stroke-width="4" stroke-linecap="round" d="M2,15 Q25,5 50,15 T98,15" style="stroke-dasharray: 120; stroke-dashoffset: 120; animation: draw-line 2s ease-in-out infinite alternate;" /></svg></span>.<br class="hidden sm:block" />
+            Sign up in minutes and never pay hidden fees again.
+          </p>
+          <a href="#" class="inline-flex h-14 items-center justify-center rounded-full bg-gradient-to-b from-blue-500 to-blue-600 bg-[length:100%_200%] bg-top px-10 text-lg font-bold text-white shadow-[0_8px_20px_rgb(37_99_235_/_0.3)] transition-all duration-500 hover:bg-bottom hover:-translate-y-1 hover:shadow-[0_12px_24px_rgb(37_99_235_/_0.4)] active:translate-y-0 focus-ring group">
+            Unlock Your Free Account <i data-lucide="arrow-right" class="ml-2 w-5 h-5 group-hover:animate-[arrow-float_1s_ease-in-out_infinite]"></i>
+          </a>
+          <p class="mt-6 text-sm text-muted-foreground/80">No hidden fees. Cancel anytime.</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full border-t border-border bg-background py-12 md:py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+          <div class="md:col-span-1">
+            <div class="flex items-center gap-2 mb-4">
+              <div class="flex h-6 w-6 items-center justify-center rounded bg-primary text-white">
+                <i data-lucide="trending-up" class="h-4 w-4"></i>
+              </div>
+              <span class="font-heading text-lg font-bold text-primary">investocarto</span>
+            </div>
+            <p class="text-sm text-muted-foreground leading-relaxed">
+              Empowering retail investors with transparent, accessible, and powerful trading tools.
+            </p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-foreground mb-4">Platform</h4>
+            <ul class="space-y-3 text-sm text-muted-foreground">
+              <li><a href="#" class="hover:text-foreground transition-colors focus-ring">Pricing</a></li>
+              <li><a href="#" class="hover:text-foreground transition-colors focus-ring">Features</a></li>
+              <li><a href="#" class="hover:text-foreground transition-colors focus-ring">Web Trading</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold text-foreground mb-4">Company</h4>
+            <ul class="space-y-3 text-sm text-muted-foreground">
+              <li><a href="#" class="hover:text-foreground transition-colors focus-ring">About Us</a></li>
+              <li><a href="#" class="hover:text-foreground transition-colors focus-ring">Careers</a></li>
+              <li><a href="#" class="hover:text-foreground transition-colors focus-ring">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold text-foreground mb-4">Support</h4>
+            <ul class="space-y-3 text-sm text-muted-foreground">
+              <li><a href="#" class="hover:text-foreground transition-colors focus-ring">Help Center</a></li>
+              <li><a href="#" class="hover:text-foreground transition-colors focus-ring">On-Demand Call</a></li>
+              <li><a href="#" class="hover:text-foreground transition-colors focus-ring">Terms of Service</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-muted-foreground">
+          <p>&copy; 2026 Investocarto. All rights reserved.</p>
+          <div class="flex gap-4">
+            <a href="#" aria-label="Twitter" class="hover:text-foreground focus-ring"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+            <a href="#" aria-label="LinkedIn" class="hover:text-foreground focus-ring"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+            <a href="#" aria-label="Instagram" class="hover:text-foreground focus-ring"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+      lucide.createIcons();
+    </script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
