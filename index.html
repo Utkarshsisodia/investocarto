@@ -121,551 +121,210 @@
         </div>
       </section>
 
-      <!-- Services Section -->
-      <section id="services" class="w-full py-24 md:py-32 bg-white relative overflow-hidden">
+      <!-- About Section -->
+      <section id="about" class="w-full py-24 md:py-32 bg-white relative overflow-hidden border-t border-slate-100">
+        <!-- Subtle Background Elements -->
+        <div class="absolute top-0 right-0 w-[800px] h-[800px] bg-blue-50/50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 -z-10 pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-slate-50 rounded-full blur-3xl translate-y-1/3 -translate-x-1/4 -z-10 pointer-events-none"></div>
+        
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div class="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
+          <div class="flex flex-col lg:flex-row items-start gap-16 lg:gap-14">
             
-            <!-- Left Column: Text -->
-            <div class="flex-1 w-full lg:max-w-lg text-left">
-              <h2 class="font-heading text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight mb-6 text-slate-900 leading-[1.15]">
-                <span class="underline decoration-[4px] decoration-slate-400/60 underline-offset-[6px]">Services</span> you need to <span class="bg-gradient-to-r from-blue-600 to-indigo-500 bg-clip-text text-transparent pb-1">trade smarter</span>.
+            <!-- Left Column: Image -->
+            <div class="flex-1 w-full relative">
+              <div class="relative aspect-[4/5] md:aspect-square lg:aspect-square overflow-hidden">
+                <div class="absolute inset-0 bg-slate-900/10 z-10"></div>
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop" alt="Team at Investocarto" class="w-full h-full object-cover">
+              </div>
+            </div>
+            
+            <!-- Right Column: Content -->
+            <div class="flex-1 w-full text-left overflow-hidden">
+              <h2 class="font-heading text-4xl md:text-5xl lg:text-4xl xl:text-6xl font-bold tracking-tight mb-8 text-slate-900 leading-[1.15] lg:whitespace-nowrap">
+                About <span class="bg-gradient-to-r from-blue-600 via-blue-500 to-indigo-500 bg-clip-text text-transparent">Investocarto</span>
               </h2>
-              <p class="text-lg text-slate-500 leading-relaxed mb-10 max-w-prose">
-                Investocarto provides an institutional-grade toolkit tailored for retail traders. From algorithmic execution to deep analytics, our platform empowers you to trade with precision, speed, and absolute control.
-              </p>
-              <ul class="space-y-4">
-                <li class="flex items-center gap-3 text-slate-700 font-medium"><i data-lucide="check-circle-2" class="text-blue-500 w-5 h-5"></i> Institutional-grade latency</li>
-                <li class="flex items-center gap-3 text-slate-700 font-medium"><i data-lucide="check-circle-2" class="text-blue-500 w-5 h-5"></i> 100+ native indicators</li>
-                <li class="flex items-center gap-3 text-slate-700 font-medium"><i data-lucide="check-circle-2" class="text-blue-500 w-5 h-5"></i> Bank-level encryption</li>
-              </ul>
-            </div>
-            
-            <!-- Right Column: Staggered Grid -->
-            <div class="flex-1 w-full relative">
-              <div class="grid grid-cols-2 gap-4 md:gap-6">
-                <!-- Column 1 -->
-                <div class="flex flex-col gap-4 md:gap-6">
-                  <!-- Grid Item 1 -->
-                  <div class="relative group rounded-2xl overflow-hidden aspect-[4/5] shadow-lg">
-                    <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=800&auto=format&fit=crop" alt="Algorithmic Trading" class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-t from-blue-900/90 via-blue-900/20 to-transparent mix-blend-multiply"></div>
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-transparent to-transparent opacity-80"></div>
-                    <div class="absolute inset-0 p-6 flex flex-col justify-end overflow-hidden">
-                      <h3 class="text-white font-heading text-xl font-bold mb-1 translate-y-5 group-hover:translate-y-0 transition-transform duration-300">Algo Trading</h3>
-                      <p class="text-blue-100 text-sm font-light opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 leading-snug">Automate your strategies with zero-latency execution.</p>
-                    </div>
-                  </div>
-
-                  <!-- Grid Item 2 -->
-                  <div class="relative group rounded-2xl overflow-hidden aspect-square shadow-lg">
-                    <img src="https://images.unsplash.com/photo-1642543492481-44e81e3914a7?q=80&w=800&auto=format&fit=crop" alt="Portfolio Management" class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-900/90 via-emerald-900/20 to-transparent mix-blend-multiply"></div>
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-transparent to-transparent opacity-80"></div>
-                    <div class="absolute inset-0 p-6 flex flex-col justify-end overflow-hidden">
-                      <h3 class="text-white font-heading text-xl font-bold mb-1 translate-y-5 group-hover:translate-y-0 transition-transform duration-300">Portfolio Sync</h3>
-                      <p class="text-emerald-100 text-sm font-light opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 leading-snug">Track all your brokerages in one unified dashboard.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Column 2 -->
-                <div class="flex flex-col gap-4 md:gap-6 mt-12 md:mt-16">
-                  <!-- Grid Item 3 -->
-                  <div class="relative group rounded-2xl overflow-hidden aspect-square shadow-lg">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop" alt="Data Analytics" class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-t from-purple-900/90 via-purple-900/20 to-transparent mix-blend-multiply"></div>
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-transparent to-transparent opacity-80"></div>
-                    <div class="absolute inset-0 p-6 flex flex-col justify-end overflow-hidden">
-                      <h3 class="text-white font-heading text-xl font-bold mb-1 translate-y-5 group-hover:translate-y-0 transition-transform duration-300">Deep Analytics</h3>
-                      <p class="text-purple-100 text-sm font-light opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 leading-snug">Visualize market trends and backtest with historical data.</p>
-                    </div>
-                  </div>
-
-                  <!-- Grid Item 4 -->
-                  <div class="relative group rounded-2xl overflow-hidden aspect-[4/5] shadow-lg">
-                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=800&auto=format&fit=crop" alt="Risk Management" class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent mix-blend-multiply"></div>
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-transparent to-transparent opacity-80"></div>
-                    <div class="absolute inset-0 p-6 flex flex-col justify-end overflow-hidden">
-                      <h3 class="text-white font-heading text-xl font-bold mb-1 translate-y-5 group-hover:translate-y-0 transition-transform duration-300">Risk Control</h3>
-                      <p class="text-slate-200 text-sm font-light opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 leading-snug">Set global stop-losses and position sizing limits automatically.</p>
-                    </div>
-                  </div>
-                </div>
+              
+              <div class="space-y-6 text-lg text-slate-500 leading-relaxed mb-6">
+                <p>
+                  We are a collective of former institutional traders, quantitative analysts, and elite software engineers who grew tired of the massive disparity between Wall Street's technology and what is available to the everyday retail investor. We built Investocarto to level the playing field.
+                </p>
+                <p>
+                  For too long, retail traders have been hampered by clunky interfaces, hidden spread markups, and execution latency that makes true algorithmic trading impossible. Our mission is to democratize access to institutional-grade financial infrastructure.
+                </p>
+                <p>
+                  By stripping away the middlemen and building our matching engine from the ground up, we provide a zero-compromise trading environment. With Investocarto, you get raw market access, unparalleled execution speed, and absolute transparency in every single trade you make.
+                </p>
               </div>
+              
+              <a href="#about" class="inline-flex h-14 items-center justify-center rounded-full bg-gradient-to-b from-blue-500 to-blue-600 bg-[length:100%_200%] bg-top px-8 text-base font-bold text-white shadow-[0_8px_20px_rgb(37_99_235_/_0.3)] transition-all duration-500 hover:bg-bottom hover:-translate-y-1 hover:shadow-[0_12px_24px_rgb(37_99_235_/_0.4)] active:translate-y-0 focus-ring group">
+                About Us 
+                <div class="ml-3 bg-white/20 rounded-full p-1 group-hover:bg-white/30 transition-colors">
+                  <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-0.5 transition-transform"></i>
+                </div>
+              </a>
             </div>
             
           </div>
         </div>
       </section>
 
-      <!-- Steps Section -->
-      <section class="w-full py-24 md:py-32 bg-slate-50 relative overflow-hidden border-t border-slate-100">
-        <!-- Dot Pattern Background -->
-        <div class="absolute inset-0 bg-[radial-gradient(#e2e8f0_1.5px,transparent_1.5px)] [background-size:24px_24px] opacity-40 pointer-events-none"></div>
+      <!-- How We Can Help Section -->
+      <section id="how-we-help" class="w-full py-24 md:py-32 bg-slate-950 text-slate-50 relative overflow-hidden border-t border-slate-800">
+        <!-- Background Elements -->
+        <div class="absolute inset-0 z-0 pointer-events-none">
+          <img src="https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=2400&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-20 grayscale" alt="Background">
+          <div class="absolute inset-0 bg-slate-950/80 mix-blend-multiply"></div>
+          <div class="absolute inset-0 bg-gradient-to-b from-slate-950/90 via-slate-950/40 to-slate-950/90"></div>
+          <div class="absolute -top-1/4 -right-1/4 w-[800px] h-[800px] bg-blue-900/30 rounded-full blur-[120px]"></div>
+          <div class="absolute -bottom-1/4 -left-1/4 w-[600px] h-[600px] bg-indigo-900/30 rounded-full blur-[120px]"></div>
+        </div>
         
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          
-          <!-- Section Header -->
-          <div class="text-center mb-24">
-            <h2 class="font-heading text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-3 bg-gradient-to-r from-slate-900 via-slate-700 to-slate-500 bg-clip-text text-transparent pb-2">
-              From zero to execution.
+          <!-- Header -->
+          <div class="mb-16 md:mb-20 text-center flex flex-col items-center">
+            <h2 class="font-heading text-5xl md:text-6xl font-bold tracking-tight mb-6 bg-gradient-to-br from-white via-slate-200 to-slate-500 bg-clip-text text-transparent ">
+              How We Can Help You
             </h2>
-            <p class="text-lg text-slate-500 max-w-prose mx-auto text-balance tracking-wide [word-spacing:0.1em] leading-relaxed">
-              We've stripped away the friction. Three simple steps stand between you and automated, zero-fee trading.
-            </p>
-          </div>
-
-          <!-- Step 1 -->
-          <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
-            <div class="flex-1 w-full text-left order-2 md:order-1">
-              <h3 class="font-heading text-4xl lg:text-5xl font-light tracking-tight mb-4 text-slate-900 max-w-md w-full">
-                Connect your funding source.
-              </h3>
-              <p class="text-lg text-slate-500 leading-snug max-w-md w-full">
-                Link your bank account directly via our encrypted, bank-grade portal. We verify your identity and synchronize your balances in seconds without any manual paperwork or tedious waiting periods. Your funds are kept in segregated accounts for maximum security, allowing you to instantly deploy capital the moment you see an opportunity.
-              </p>
-            </div>
-            <div class="flex-1 w-full order-1 md:order-2">
-              <div class="relative aspect-[4/3] rounded-2xl overflow-hidden border border-slate-200/60 group">
-                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1200&auto=format&fit=crop" alt="Connect account securely" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                <div class="absolute inset-0 bg-blue-900/5 group-hover:bg-transparent transition-colors duration-500"></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Swirly Arrow 1 -->
-          <div class="w-full flex justify-center py-8 relative">
-            <svg class="w-24 h-32 text-slate-300 stroke-current" viewBox="0 0 120 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M 60,0 C 140,50 -20,100 60,150" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 8" fill="transparent"/>
-              <path d="M 48,135 L 60,150 L 72,135" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white px-5 py-2 rounded-full border border-slate-200 text-xs font-bold text-slate-600 uppercase tracking-widest shadow-sm rotate-[-3deg] hover:rotate-0 transition-transform">
-              Next: Step 2
-            </div>
-          </div>
-
-          <!-- Step 2 -->
-          <div class="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
-            <div class="flex-1 w-full text-left order-2 md:order-1">
-              <h3 class="font-heading text-4xl lg:text-5xl font-light tracking-tight mb-4 text-slate-900 max-w-md w-full">
-                Define your strategy.
-              </h3>
-              <p class="text-lg text-slate-500 leading-snug max-w-md w-full">
-                Choose from over 100 built-in technical indicators or import your own custom scripts. Set your entry points, risk-to-reward ratios, trailing stops, and target allocations in our intuitive visual builder. Whether you are scalping intra-day or building a long-term portfolio, you have complete control over every parameter of your edge.
-              </p>
-            </div>
-            <div class="flex-1 w-full order-1 md:order-2">
-              <div class="relative aspect-[4/3] rounded-2xl overflow-hidden border border-slate-200/60 group">
-                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop" alt="Define strategy on charts" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                <div class="absolute inset-0 bg-purple-900/5 group-hover:bg-transparent transition-colors duration-500"></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Swirly Arrow 2 -->
-          <div class="w-full flex justify-center py-8 relative">
-            <svg class="w-24 h-32 text-slate-300 stroke-current transform scale-x-[-1]" viewBox="0 0 120 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M 60,0 C 140,50 -20,100 60,150" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 8" fill="transparent"/>
-              <path d="M 48,135 L 60,150 L 72,135" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white px-5 py-2 rounded-full border border-slate-200 text-xs font-bold text-slate-600 uppercase tracking-widest shadow-sm rotate-[3deg] hover:rotate-0 transition-transform">
-              Next: Step 3
-            </div>
-          </div>
-
-          <!-- Step 3 -->
-          <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
-            <div class="flex-1 w-full text-left order-2 md:order-1">
-              <h3 class="font-heading text-4xl lg:text-5xl font-light tracking-tight mb-4 text-slate-900 max-w-md w-full">
-                Automate your execution.
-              </h3>
-              <p class="text-lg text-slate-500 leading-snug max-w-md w-full">
-                Turn your strategy on and step away from the screens. Investocarto's infrastructure monitors the market globally 24/7, tracking price action across multiple exchanges. When your exact conditions are met, our high-frequency execution engine routes your orders instantly, eliminating emotional decision-making and manual latency.
-              </p>
-            </div>
-            <div class="flex-1 w-full order-1 md:order-2">
-              <div class="relative aspect-[4/3] rounded-2xl overflow-hidden border border-slate-200/60 group">
-                <img src="https://images.unsplash.com/photo-1642543492481-44e81e3914a7?q=80&w=1200&auto=format&fit=crop" alt="Automated execution" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                <div class="absolute inset-0 bg-blue-900/5 group-hover:bg-transparent transition-colors duration-500"></div>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Swirly Arrow 3 -->
-          <div class="w-full flex justify-center py-8 relative">
-            <svg class="w-24 h-32 text-slate-300 stroke-current" viewBox="0 0 120 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M 60,0 C 140,50 -20,100 60,150" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 8" fill="transparent"/>
-              <path d="M 48,135 L 60,150 L 72,135" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white px-5 py-2 rounded-full border border-slate-200 text-xs font-bold text-slate-600 uppercase tracking-widest shadow-sm rotate-[-3deg] hover:rotate-0 transition-transform">
-              Ready?
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- USP Section -->
-      <section id="features" class="w-full py-24 bg-slate-50 relative overflow-hidden border-t border-slate-200/60">
-        <!-- Dot Pattern Background -->
-        <div class="absolute inset-0 bg-[radial-gradient(#94a3b8_1.5px,transparent_1.5px)] [background-size:24px_24px] opacity-80 pointer-events-none"></div>
-        
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div class="text-center mb-16">
-            <h2 class="font-heading text-4xl md:text-5xl font-bold tracking-tight mb-4">
-              <span class="bg-gradient-to-br from-zinc-900 via-zinc-700 to-zinc-500 bg-clip-text text-transparent">All signal. No noise.</span>
-            </h2>
-            <p class="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed text-balance">
-              We cut the jargon and focus on what actually helps you trade smarter.
+            <p class="text-lg text-slate-400 leading-relaxed max-w-3xl text-balance">
+              Whether your financial aspirations involve building a long-term portfolio or running high-frequency algorithms, rest assured that Investocarto's infrastructure will guide and empower you to execute your strategy with absolute precision.
             </p>
           </div>
           
-          <div class="relative w-full">
-            <!-- Animated Background Blobs Behind Grid -->
-            <div class="absolute inset-0 pointer-events-none z-0">
-              <div class="absolute -top-32 -left-32 w-[600px] h-[600px] bg-blue-300/20 rounded-full mix-blend-multiply filter blur-[100px] animate-blob"></div>
-              <div class="absolute -bottom-32 -right-32 w-[600px] h-[600px] bg-purple-300/20 rounded-full mix-blend-multiply filter blur-[100px] animate-blob animation-delay-4000"></div>
-            </div>
+          <!-- Two Cards Layout -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 max-w-5xl mx-auto">
             
-            <div class="relative z-10 grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-6">
-              <!-- Card 1: Tall Left (On-Demand Call Support) -->
-            <div class="md:col-span-1 md:row-span-2 relative p-[1px] group w-full rounded-3xl shadow-sm">
-              <div class="absolute inset-0 rounded-3xl overflow-hidden pointer-events-none"><div class="absolute inset-[-1000%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_0deg,#6366f1,#a855f7,#ec4899,#f43f5e,#f97316,#6366f1)] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div></div>
-              <div class="relative h-full flex flex-col bg-white rounded-[calc(1.5rem-1px)] border border-slate-200/60 p-8 md:p-10 overflow-hidden group-hover:border-transparent transition-colors duration-500">
-                <h3 class="font-heading text-xl md:text-2xl font-medium text-slate-800 tracking-tight mb-4">
-                  <span class="relative inline-block z-10">On-Demand Call Support<svg class="absolute -bottom-2 left-0 w-full h-3 text-indigo-400 stroke-current -z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" viewBox="0 0 100 20" preserveAspectRatio="none"><path fill="none" stroke-width="4" stroke-linecap="round" d="M2,15 Q25,5 50,15 T98,15" style="stroke-dasharray: 120; stroke-dashoffset: 120; animation: draw-line 2s ease-in-out infinite alternate;" /></svg></span>
-                </h3>
-              <p class="text-base text-slate-500 leading-relaxed">
-                Stuck on a trade or need account help? Speak directly to our financial support team anytime. No bots, just real humans ready to assist.
-              </p>
-              <div class="mt-10 flex-1 w-full bg-indigo-50/50 rounded-2xl border border-indigo-100/50 flex flex-col items-center justify-center relative overflow-hidden min-h-[200px]">
-                <div class="absolute w-32 h-32 bg-indigo-400/20 rounded-full blur-2xl animate-pulse"></div>
-                
-                <!-- Animated Illustration: Floating Chat & Call -->
-                <div class="relative w-32 h-32 flex items-center justify-center group-hover:scale-105 transition-transform duration-500">
-                  <div class="absolute w-24 h-24 border border-indigo-200 rounded-full animate-[ping_3s_infinite]"></div>
-                  <div class="absolute bg-white rounded-2xl rounded-tr-sm p-4 shadow-lg -top-2 -right-4 animate-[bounce_4s_infinite_ease-in-out]">
-                    <div class="flex gap-1.5">
-                      <div class="w-2 h-2 bg-indigo-400 rounded-full animate-bounce" style="animation-delay: 0ms;"></div>
-                      <div class="w-2 h-2 bg-indigo-400 rounded-full animate-bounce" style="animation-delay: 150ms;"></div>
-                      <div class="w-2 h-2 bg-indigo-400 rounded-full animate-bounce" style="animation-delay: 300ms;"></div>
-                    </div>
-                  </div>
-                  <div class="absolute bg-indigo-600 rounded-2xl rounded-bl-sm p-4 shadow-xl bottom-2 -left-4 animate-[bounce_4s_infinite_ease-in-out_1s]">
-                    <i data-lucide="phone" class="w-6 h-6 text-white animate-pulse"></i>
-                  </div>
-                </div>
-                </div>
+            <!-- Card 1 -->
+            <a href="#services" class="group flex flex-col rounded-[2rem] overflow-hidden shadow-2xl border border-slate-800 focus-ring bg-slate-900">
+              <!-- Image -->
+              <div class="h-64 sm:h-72 md:h-80 overflow-hidden relative">
+                <div class="absolute inset-0 bg-slate-900/10 z-10"></div>
+                <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=800&auto=format&fit=crop" alt="Active Trading" class="w-full h-full object-cover">
               </div>
-            </div>
-            
-            <!-- Card 2: Top Right Wide (Transparent Brokerage) -->
-            <div class="md:col-span-2 md:row-span-1 relative p-[1px] group w-full rounded-3xl shadow-sm">
-              <div class="absolute inset-0 rounded-3xl overflow-hidden pointer-events-none"><div class="absolute inset-[-1000%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_0deg,#6366f1,#a855f7,#ec4899,#f43f5e,#f97316,#6366f1)] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div></div>
-              <div class="relative h-full flex flex-col md:flex-row items-center gap-8 md:gap-12 bg-white rounded-[calc(1.5rem-1px)] border border-slate-200/60 p-8 md:p-10 overflow-hidden group-hover:border-transparent transition-colors duration-500">
-                <div class="flex-1">
-                  <h3 class="font-heading text-xl md:text-2xl font-medium text-slate-800 tracking-tight mb-4">
-                    <span class="relative inline-block z-10">Transparent, Low Brokerage<svg class="absolute -bottom-2 left-0 w-full h-3 text-purple-400 stroke-current -z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" viewBox="0 0 100 20" preserveAspectRatio="none"><path fill="none" stroke-width="4" stroke-linecap="round" d="M2,15 Q25,5 50,15 T98,15" style="stroke-dasharray: 120; stroke-dashoffset: 120; animation: draw-line 2s ease-in-out infinite alternate;" /></svg></span>
+              <!-- Content Band -->
+              <div class="bg-gradient-to-br from-blue-600 to-blue-700 p-8 sm:p-10 flex-1 flex flex-col relative overflow-hidden">
+                <!-- Decorative background pattern in the colored band -->
+                <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.15),transparent_50%)] pointer-events-none"></div>
+                
+                <div class="flex items-center justify-between mb-4 relative z-10">
+                  <h3 class="text-2xl sm:text-3xl font-bold text-white tracking-tight underline decoration-2 underline-offset-[6px] decoration-white/40 group-hover:decoration-white transition-colors">
+                    Active Traders
                   </h3>
-                <p class="text-base text-slate-500 leading-relaxed max-w-xl">
-                  Keep more of your profits. We offer some of the most competitive, flat-rate brokerage fees in the industry with zero hidden charges.
+                  <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center text-white backdrop-blur-sm group-hover:bg-white group-hover:text-blue-600 transition-colors duration-300 shrink-0">
+                    <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                  </div>
+                </div>
+                <p class="text-blue-50 text-base sm:text-lg leading-relaxed relative z-10 font-light">
+                  Execute manually with zero latency. Access deep order book dynamics, volume profiles, and advanced charting tools designed for serious retail investors.
                 </p>
               </div>
-              <div class="w-full md:w-auto md:flex-1 h-full min-h-[160px] bg-slate-50/50 rounded-2xl border border-slate-100 p-8 flex flex-col items-center justify-center relative overflow-hidden">
-                <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-purple-400/20 rounded-full blur-3xl"></div>
-                
-                <!-- Animated Illustration: Floating Zero Fee Receipt -->
-                <div class="relative flex items-center justify-center w-full h-full group-hover:scale-105 transition-transform duration-500 min-h-[140px]">
-                  <div class="absolute bg-white w-28 h-36 rounded-xl shadow-xl border border-slate-100 p-4 flex flex-col animate-[bounce_5s_infinite_ease-in-out]">
-                    <div class="w-full h-2 bg-slate-100 rounded-full mb-3"></div>
-                    <div class="w-3/4 h-2 bg-slate-100 rounded-full mb-3"></div>
-                    <div class="w-5/6 h-2 bg-slate-100 rounded-full mb-6"></div>
-                    <div class="mt-auto pt-3 border-t-2 border-dashed border-slate-100 flex justify-between items-center">
-                      <div class="text-xs font-bold text-slate-400">FEE</div>
-                      <div class="bg-purple-100 text-purple-600 text-sm font-black px-2 py-0.5 rounded-md animate-pulse">$0</div>
-                    </div>
-                  </div>
-                  <div class="absolute -right-6 top-2 bg-purple-600 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg -rotate-12 animate-[bounce_5s_infinite_ease-in-out_0.5s]">Free!</div>
-                </div>
-                </div>
-              </div>
-            </div>
+            </a>
             
-            <!-- Card 3: Bottom Right Wide (Advanced Trading Support) -->
-            <div class="md:col-span-2 md:row-span-1 relative p-[1px] group w-full rounded-3xl shadow-sm">
-              <div class="absolute inset-0 rounded-3xl overflow-hidden pointer-events-none"><div class="absolute inset-[-1000%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_0deg,#6366f1,#a855f7,#ec4899,#f43f5e,#f97316,#6366f1)] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div></div>
-              <div class="relative h-full flex flex-col md:flex-row items-center gap-8 md:gap-12 bg-white rounded-[calc(1.5rem-1px)] border border-slate-200/60 p-8 md:p-10 overflow-hidden group-hover:border-transparent transition-colors duration-500">
-                <div class="flex-1">
-                  <h3 class="font-heading text-xl md:text-2xl font-medium text-slate-800 tracking-tight mb-4">
-                    <span class="relative inline-block z-10">Advanced Trading Support<svg class="absolute -bottom-2 left-0 w-full h-3 text-blue-400 stroke-current -z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" viewBox="0 0 100 20" preserveAspectRatio="none"><path fill="none" stroke-width="4" stroke-linecap="round" d="M2,15 Q25,5 50,15 T98,15" style="stroke-dasharray: 120; stroke-dashoffset: 120; animation: draw-line 2s ease-in-out infinite alternate;" /></svg></span>
+            <!-- Card 2 -->
+            <a href="#services" class="group flex flex-col rounded-[2rem] overflow-hidden shadow-2xl border border-slate-800 focus-ring bg-slate-900">
+              <!-- Image -->
+              <div class="h-64 sm:h-72 md:h-80 overflow-hidden relative">
+                <div class="absolute inset-0 bg-slate-900/10 z-10"></div>
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop" alt="Algorithmic Trading" class="w-full h-full object-cover">
+              </div>
+              <!-- Content Band -->
+              <div class="bg-gradient-to-br from-indigo-600 to-purple-600 p-8 sm:p-10 flex-1 flex flex-col relative overflow-hidden">
+                <!-- Decorative background pattern in the colored band -->
+                <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.15),transparent_50%)] pointer-events-none"></div>
+                
+                <div class="flex items-center justify-between mb-4 relative z-10">
+                  <h3 class="text-2xl sm:text-3xl font-bold text-white tracking-tight underline decoration-2 underline-offset-[6px] decoration-white/40 group-hover:decoration-white transition-colors">
+                    Algorithmic Trading
                   </h3>
-                <p class="text-base text-slate-500 leading-relaxed">
-                  Execute trades with lightning speed. Access clear, actionable charts, and leverage our integrated analysis tools designed for retail investors.
+                  <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center text-white backdrop-blur-sm group-hover:bg-white group-hover:text-indigo-600 transition-colors duration-300 shrink-0">
+                    <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                  </div>
+                </div>
+                <p class="text-indigo-50 text-base sm:text-lg leading-relaxed relative z-10 font-light">
+                  Automate your edge. Deploy custom scripts and institutional order types like VWAP and TWAP that execute 24/7 without emotion.
                 </p>
               </div>
-              <div class="w-full md:w-auto md:flex-1 h-full min-h-[160px] bg-blue-50/50 rounded-2xl border border-blue-100/50 flex flex-col items-center justify-center relative overflow-hidden">
-                <div class="absolute -bottom-10 -right-10 w-48 h-48 bg-blue-400/20 rounded-full blur-3xl"></div>
-                
-                <!-- Animated Illustration: Dynamic Chart -->
-                <div class="relative w-full max-w-[200px] h-32 flex items-end justify-between px-2 pb-2 gap-3 group-hover:scale-105 transition-transform duration-500">
-                  <div class="w-full bg-blue-200 rounded-t-lg animate-[pulse_2s_infinite] h-[30%] relative">
-                    <div class="absolute top-0 left-0 w-full h-1 bg-blue-300 rounded-t-lg"></div>
-                  </div>
-                  <div class="w-full bg-blue-300 rounded-t-lg animate-[pulse_2.5s_infinite] h-[55%] relative">
-                    <div class="absolute top-0 left-0 w-full h-1 bg-blue-400 rounded-t-lg"></div>
-                  </div>
-                  <div class="w-full bg-blue-400 rounded-t-lg animate-[pulse_3s_infinite] h-[40%] relative">
-                    <div class="absolute top-0 left-0 w-full h-1 bg-blue-500 rounded-t-lg"></div>
-                  </div>
-                  <div class="w-full bg-blue-500 rounded-t-lg h-[85%] relative shadow-lg">
-                    <div class="absolute -top-4 -right-6 bg-white border-2 border-blue-500 text-blue-600 text-[10px] font-bold px-2 py-1 rounded-full shadow-md animate-bounce">+24%</div>
-                    <div class="absolute top-0 left-0 w-full h-1 bg-blue-400 rounded-t-lg"></div>
-                  </div>
-                </div>
-                </div>
-              </div>
-            </div>
-            
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Visual Feature Highlight -->
-      <section class="w-full py-24 overflow-hidden bg-slate-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex flex-col lg:flex-row items-center gap-16">
-            
-            <!-- Left Text Content -->
-            <div class="flex-1 text-left relative z-10 w-full flex flex-col justify-center">
-              <div id="feature-text-content" class="transition-opacity duration-300 ease-in-out opacity-100 min-h-[480px] lg:min-h-[380px]">
-                <h2 class="font-heading text-4xl md:text-5xl font-bold tracking-tight mb-6">
-                  <span id="feature-title" class="bg-gradient-to-br from-slate-900 to-slate-600 bg-clip-text text-transparent">Clean interface, perfect clarity.</span>
-                </h2>
-                <p id="feature-desc" class="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
-                  Whether you're placing your first order or your thousandth, our interface is designed to keep you focused on the market. Say goodbye to cluttered screens.
-                </p>
-                <ul id="feature-list" class="space-y-4 mb-10">
-                  <li class="flex items-start gap-3">
-                    <div class="mt-1 bg-blue-500/10 p-1 rounded-full text-blue-600"><i data-lucide="check" class="w-4 h-4"></i></div>
-                    <span class="text-slate-700 font-medium text-lg">Real-time market data directly from exchanges.</span>
-                  </li>
-                  <li class="flex items-start gap-3">
-                    <div class="mt-1 bg-blue-500/10 p-1 rounded-full text-blue-600"><i data-lucide="check" class="w-4 h-4"></i></div>
-                    <span class="text-slate-700 font-medium text-lg">One-click order execution.</span>
-                  </li>
-                  <li class="flex items-start gap-3">
-                    <div class="mt-1 bg-blue-500/10 p-1 rounded-full text-blue-600"><i data-lucide="check" class="w-4 h-4"></i></div>
-                    <span class="text-slate-700 font-medium text-lg">Seamless portfolio tracking on desktop and mobile.</span>
-                  </li>
-                </ul>
-              </div>
-              
-              <!-- Navigation Controls & Progress -->
-              <div class="flex flex-col items-start gap-4">
-                <div class="flex items-center gap-4">
-                  <button id="feature-prev" class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-b from-blue-500 to-blue-600 bg-[length:100%_200%] bg-top text-white transition-all duration-500 hover:bg-bottom active:scale-95 focus-ring group">
-                    <i data-lucide="arrow-left" class="w-5 h-5 group-hover:-translate-x-0.5 transition-transform duration-300"></i>
-                  </button>
-                  <button id="feature-next" class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-b from-blue-500 to-blue-600 bg-[length:100%_200%] bg-top text-white transition-all duration-500 hover:bg-bottom active:scale-95 focus-ring group">
-                    <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-0.5 transition-transform duration-300"></i>
-                  </button>
-                </div>
-                
-                <!-- Auto-cycle Progress Pill -->
-                <div class="inline-flex items-center bg-slate-100 border border-slate-200/60 rounded-full px-3 py-1.5 shadow-sm">
-                  <div class="w-16 h-1 bg-slate-200 rounded-full overflow-hidden">
-                    <div id="slider-progress" class="h-full bg-slate-400 w-0"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Right Stacked Cards -->
-            <div class="flex-1 w-full relative">
-              <div class="absolute inset-0 bg-gradient-to-tr from-blue-500/20 to-purple-500/20 rounded-[2rem] transform rotate-3 scale-105 -z-10 blur-xl"></div>
-              
-              <!-- Cards Container -->
-              <div class="relative w-full aspect-[4/3] pr-8 pb-10 md:pr-12 md:pb-12">
-                
-                <!-- Card 1 -->
-                <div class="feature-card absolute inset-0 md:inset-auto md:w-[calc(100%-3rem)] md:h-[calc(100%-3rem)] rounded-[2rem] overflow-hidden shadow-2xl border border-slate-200 bg-white transition-all duration-700 ease-out z-30 scale-100 translate-x-0 opacity-100 transform origin-left">
-                  <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1200&auto=format&fit=crop" alt="Interface" class="w-full h-full object-cover">
-                  <!-- Overlay Widget -->
-                  <div class="absolute bottom-8 left-8 bg-white/90 backdrop-blur-md p-4 pr-6 rounded-2xl shadow-xl border border-white/60 flex items-center gap-4">
-                    <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600"><i data-lucide="layout" class="w-5 h-5"></i></div>
-                    <div>
-                       <div class="text-xs text-slate-500 font-semibold uppercase tracking-wider mb-0.5">Layout</div>
-                       <div class="text-base font-bold text-slate-900 leading-none">Simplified</div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="feature-card absolute inset-0 md:inset-auto md:w-[calc(100%-3rem)] md:h-[calc(100%-3rem)] rounded-[2rem] overflow-hidden shadow-2xl border border-slate-200 bg-white transition-all duration-700 ease-out z-20 scale-95 translate-x-8 translate-y-4 opacity-60 transform origin-left pointer-events-none">
-                  <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop" alt="Analytics" class="w-full h-full object-cover">
-                  <!-- Overlay Widget -->
-                  <div class="absolute top-8 left-8 bg-white/90 backdrop-blur-md p-4 pr-6 rounded-2xl shadow-xl border border-white/60 flex items-center gap-4">
-                    <div class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center text-purple-600"><i data-lucide="bar-chart-3" class="w-5 h-5"></i></div>
-                    <div>
-                       <div class="text-xs text-slate-500 font-semibold uppercase tracking-wider mb-0.5">Analytics</div>
-                       <div class="text-base font-bold text-slate-900 leading-none">Pro Tools</div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="feature-card absolute inset-0 md:inset-auto md:w-[calc(100%-3rem)] md:h-[calc(100%-3rem)] rounded-[2rem] overflow-hidden shadow-2xl border border-slate-200 bg-white transition-all duration-700 ease-out z-10 scale-90 translate-x-16 translate-y-8 opacity-0 transform origin-left pointer-events-none">
-                  <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=1200&auto=format&fit=crop" alt="Security" class="w-full h-full object-cover">
-                  <!-- Overlay Widget -->
-                  <div class="absolute bottom-12 right-8 bg-white/90 backdrop-blur-md p-4 pr-6 rounded-2xl shadow-xl border border-white/60 flex items-center gap-4">
-                    <div class="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600"><i data-lucide="shield-check" class="w-5 h-5"></i></div>
-                    <div>
-                       <div class="text-xs text-slate-500 font-semibold uppercase tracking-wider mb-0.5">Security</div>
-                       <div class="text-base font-bold text-slate-900 leading-none">Bank Grade</div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-              
-
-              
-            </div>
+            </a>
             
           </div>
         </div>
       </section>
 
-      <script>
-        document.addEventListener('DOMContentLoaded', () => {
-          const featureData = [
-            {
-              title: "Clean interface, perfect clarity.",
-              desc: "Whether you're placing your first order or your thousandth, our interface is designed to keep you focused on the market. Say goodbye to cluttered screens.",
-              list: [
-                "Real-time market data directly from exchanges.",
-                "One-click order execution.",
-                "Seamless portfolio tracking on desktop and mobile."
-              ]
-            },
-            {
-              title: "Powerful pro analytics tools.",
-              desc: "Dive deep into market trends with our institutional-grade charting tools. Access real-time indicators and custom timeframes without the bloat.",
-              list: [
-                "Advanced interactive charting.",
-                "100+ technical indicators out of the box.",
-                "Multi-monitor workspace support."
-              ]
-            },
-            {
-              title: "Secure and instant execution.",
-              desc: "Your funds and trades are protected by enterprise-grade infrastructure. Execute trades in milliseconds with zero fear of slippage.",
-              list: [
-                "Military-grade 256-bit encryption.",
-                "Instant cross-border settlements.",
-                "99.99% proven uptime guarantee."
-              ]
-            }
-          ];
-
-          let currentSlide = 0;
-          const totalSlides = featureData.length;
+      <!-- What Makes Us Different Section -->
+      <section id="difference" class="w-full py-24 md:py-32 bg-white relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div class="text-center mb-16 md:mb-24">
+            <h2 class="font-heading text-3xl md:text-6xl font-bold tracking-tight pb-1">
+              <span class="bg-gradient-to-br from-slate-800 via-slate-500 to-slate-900 bg-clip-text text-transparent">What Makes</span> 
+              <span class="bg-gradient-to-r from-blue-600 to-indigo-500 bg-clip-text text-transparent">Investocarto</span> 
+              <span class="bg-gradient-to-br from-slate-800 via-slate-500 to-slate-900 bg-clip-text text-transparent">Different?</span>
+            </h2>
+          </div>
           
-          const titleEl = document.getElementById('feature-title');
-          const descEl = document.getElementById('feature-desc');
-          const listEl = document.getElementById('feature-list');
-          const leftCol = document.getElementById('feature-text-content');
-          const progressEl = document.getElementById('slider-progress');
-          
-          const cards = document.querySelectorAll('.feature-card');
-
-          let autoPlayInterval;
-          let progressAnimFrame;
-          let progressStart;
-          const SLIDE_DURATION = 5000;
-
-          function startAutoCycle() {
-            clearInterval(autoPlayInterval);
-            cancelAnimationFrame(progressAnimFrame);
+          <div class="flex flex-col">
             
-            if (progressEl) progressEl.style.width = '0%';
-            progressStart = Date.now();
-            
-            function animate() {
-              const elapsed = Date.now() - progressStart;
-              let percent = (elapsed / SLIDE_DURATION) * 100;
-              if (percent > 100) percent = 100;
-              if (progressEl) progressEl.style.width = percent + '%';
-              if (percent < 100) {
-                progressAnimFrame = requestAnimationFrame(animate);
-              }
-            }
-            animate();
-            
-            autoPlayInterval = setInterval(() => {
-              currentSlide = (currentSlide + 1) % totalSlides;
-              updateContent();
-              startAutoCycle();
-            }, SLIDE_DURATION);
-          }
-          
-          function updateContent() {
-            const data = featureData[currentSlide];
-            
-            // Fade out text
-            leftCol.style.opacity = '0';
-            
-            setTimeout(() => {
-              titleEl.textContent = data.title;
-              descEl.textContent = data.desc;
-              listEl.innerHTML = data.list.map(item => 
-                '<li class="flex items-start gap-3">' +
-                  '<div class="mt-1 bg-blue-500/10 p-1 rounded-full text-blue-600"><i data-lucide="check" class="w-4 h-4"></i></div>' +
-                  '<span class="text-slate-700 font-medium text-lg">' + item + '</span>' +
-                '</li>'
-              ).join('');
-              
-              if(window.lucide) {
-                window.lucide.createIcons();
-              }
-              
-              // Fade in text
-              leftCol.style.opacity = '1';
-            }, 300);
+            <!-- Item 1 -->
+            <div class="flex flex-col md:flex-row gap-6 md:gap-12 py-12 md:py-16 border-b border-slate-200 last:border-0 first:pt-0">
+              <div class="shrink-0 flex justify-start md:justify-center w-16 md:w-24">
+                <div class="relative inline-block group">
+                  <!-- The offset accent circle on top right of the icon -->
+                  <div class="absolute -top-1 -right-1 w-5 h-5 md:w-6 md:h-6 bg-pink-200 rounded-full z-0 mix-blend-multiply transform group-hover:scale-110 transition-transform duration-300"></div>
+                  <i data-lucide="zap" class="w-10 h-10 md:w-14 md:h-14 text-blue-600 relative z-10 stroke-[1.5]"></i>
+                </div>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-2xl md:text-3xl font-bold text-slate-600 mb-4 tracking-tight">Zero Latency Infrastructure</h3>
+                <p class="text-slate-600 leading-relaxed text-base md:text-lg mb-4">
+                  Successful trading is not just about having the right strategy, but about execution speed. To optimize the prospects of catching the right price, we carefully engineered our systems to bypass traditional retail broker latency.
+                </p>
+                <p class="text-slate-600 leading-relaxed text-base md:text-lg">
+                  Our infrastructure begins with direct market access and ends with colocated servers. We then optimize the order routing process based on the criticality of your goals, ensuring you never miss an entry.
+                </p>
+              </div>
+            </div>
 
-            // Update Stacked Cards Classes
-            cards.forEach((card, index) => {
-              let baseClasses = "feature-card absolute inset-0 md:inset-auto md:w-[calc(100%-3rem)] md:h-[calc(100%-3rem)] rounded-[2rem] overflow-hidden shadow-2xl border border-slate-200 bg-white transition-all duration-700 ease-out transform origin-left ";
-              
-              if (index === currentSlide) {
-                card.className = baseClasses + 'z-30 scale-100 translate-x-0 translate-y-0 opacity-100 pointer-events-auto';
-              } else if (index === (currentSlide + 1) % totalSlides) {
-                card.className = baseClasses + 'z-20 scale-95 translate-x-8 translate-y-4 opacity-60 pointer-events-none';
-              } else {
-                card.className = baseClasses + 'z-10 scale-90 translate-x-16 translate-y-8 opacity-0 pointer-events-none';
-              }
-            });
-          }
+            <!-- Item 2 -->
+            <div class="flex flex-col md:flex-row gap-6 md:gap-12 py-12 md:py-16 border-b border-slate-200 last:border-0">
+              <div class="shrink-0 flex justify-start md:justify-center w-16 md:w-24">
+                <div class="relative inline-block group">
+                  <!-- The offset accent circle on top right of the icon -->
+                  <div class="absolute -top-1 -right-1 w-5 h-5 md:w-6 md:h-6 bg-pink-200 rounded-full z-0 mix-blend-multiply transform group-hover:scale-110 transition-transform duration-300"></div>
+                  <i data-lucide="cpu" class="w-10 h-10 md:w-14 md:h-14 text-blue-600 relative z-10 stroke-[1.5]"></i>
+                </div>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-2xl md:text-3xl font-bold text-slate-600 mb-4 tracking-tight">Institutional-Grade Tooling</h3>
+                <p class="text-slate-600 leading-relaxed text-base md:text-lg mb-4">
+                  Quantitative investing requires sophisticated tools for research, development, and operations. Leveraging our extensive background in software engineering, we have created an advanced algorithmic toolkit for retail traders.
+                </p>
+                <p class="text-slate-600 leading-relaxed text-base md:text-lg">
+                  We provide access to VWAP, TWAP, and Iceberg orders directly in your dashboard as a means of leveling the playing field and engaging in sophisticated trading strategies without the overhead of a hedge fund.
+                </p>
+              </div>
+            </div>
 
-          document.getElementById('feature-prev').addEventListener('click', () => {
-            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-            updateContent();
-            startAutoCycle();
-          });
+            <!-- Item 3 -->
+            <div class="flex flex-col md:flex-row gap-6 md:gap-12 py-12 md:py-16 border-b border-slate-200 last:border-0">
+              <div class="shrink-0 flex justify-start md:justify-center w-16 md:w-24">
+                <div class="relative inline-block group">
+                  <!-- The offset accent circle on top right of the icon -->
+                  <div class="absolute -top-1 -right-1 w-5 h-5 md:w-6 md:h-6 bg-pink-200 rounded-full z-0 mix-blend-multiply transform group-hover:scale-110 transition-transform duration-300"></div>
+                  <i data-lucide="shield-check" class="w-10 h-10 md:w-14 md:h-14 text-blue-600 relative z-10 stroke-[1.5]"></i>
+                </div>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-2xl md:text-3xl font-bold text-slate-600 mb-4 tracking-tight">Absolute Transparency</h3>
+                <p class="text-slate-600 leading-relaxed text-base md:text-lg mb-4">
+                  Fiduciary execution requires eliminating conflicts of interest wherever possible. As such, our platform takes great pride in operating a pure zero-fee model without payment-for-order-flow.
+                </p>
+                <p class="text-slate-600 leading-relaxed text-base md:text-lg">
+                  We continuously analyze market spreads to ensure a comprehensive understanding of liquidity. Our dark pool matching engine lets us execute your trades more fairly, avoiding the hidden spread markups made by traditional brokers.
+                </p>
+              </div>
+            </div>
 
-          document.getElementById('feature-next').addEventListener('click', () => {
-            currentSlide = (currentSlide + 1) % totalSlides;
-            updateContent();
-            startAutoCycle();
-          });
-
-          // Init auto cycle
-          startAutoCycle();
-        });
-      </script>
+          </div>
+        </div>
+      </section>
 
       <!-- CTA Section -->
       <section class="w-full pt-20 pb-24 md:pt-24 md:pb-28 bg-background relative overflow-hidden border-t border-border">
