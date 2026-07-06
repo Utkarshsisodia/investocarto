@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Investocarto</title>
+    <!-- We're using standard icons. Lucide icons via CDN (unpkg) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body class="min-h-screen flex flex-col font-sans bg-background text-foreground antialiased relative">
+    
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+          <div class="flex items-center gap-2">
+            <!-- Placeholder Logo -->
+            <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-white">
+              <i data-lucide="trending-up" class="h-5 w-5"></i>
+            </div>
+            <a href="/" class="font-heading text-xl font-bold tracking-tight text-primary">investocarto</a>
+          </div>
+          <nav class="hidden md:flex gap-8">
+            <a href="/" class="text-sm font-normal text-muted-foreground/80 hover:text-foreground transition-colors focus-ring">Home</a>
+            <a href="/about.html" class="text-sm font-normal text-foreground transition-colors focus-ring">About</a>
+            <a href="/#support" class="text-sm font-normal text-muted-foreground/80 hover:text-foreground transition-colors focus-ring">Support</a>
+            <a href="/#pricing" class="text-sm font-normal text-muted-foreground/80 hover:text-foreground transition-colors focus-ring">Pricing</a>
+          </nav>
+          <div class="flex items-center gap-4">
+            <a href="#" class="relative inline-flex flex-col justify-center text-sm font-bold tracking-wide transition-all group focus-ring mr-2 pb-1">
+              <span class="bg-gradient-to-br from-blue-600 to-blue-400 bg-clip-text text-transparent group-hover:brightness-110 transition-all duration-300">Start Trading</span>
+              <span class="absolute bottom-0 left-0 w-[calc(100%+10px)] flex items-center opacity-80 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1.5">
+                <span class="h-[2px] w-full bg-gradient-to-r from-blue-600 to-blue-400 rounded-l-full"></span>
+                <svg class="w-3 h-3 text-blue-400 -ml-1 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-1 w-full relative">
+      <!-- About Page Hero -->
+      <section class="w-full py-16 md:py-20 flex relative overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 -z-20">
+          <!-- Dark gradient overlay for text readability -->
+          <div class="absolute inset-0 bg-gradient-to-r from-slate-800 via-slate-850/95 to-slate-850/10 md:to-transparent z-10"></div>
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2400&auto=format&fit=crop" alt="Team at Investocarto" class="w-full h-full object-cover object-center" />
+        </div>
+        
+        <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <!-- Slightly shorter than half page width as requested (max-w-[45%] on large screens) -->
+          <div class="w-full md:max-w-xl lg:max-w-[45%] flex flex-col">
+            <h1 class="font-heading text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 leading-[1.15] text-white">
+              About <span class="bg-gradient-to-b from-blue-400 to-blue-200 bg-clip-text text-transparent">Us</span>
+            </h1>
+            
+            <p class="text-lg md:text-xl text-slate-200 leading-relaxed mb-8">
+              We started Investocarto because we saw the gap between Wall Street's technology and what retail investors had access to. Our mission is to democratize institutional-grade financial infrastructure for everyone.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Core Philosophy Sections -->
+      <section class="w-full py-20 md:py-28 bg-white relative overflow-hidden">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 md:space-y-16">
+          
+          <!-- Block 1: Our Values (Image Left) -->
+          <div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-12">
+            <!-- Left: Image -->
+            <div class="w-full lg:w-1/2">
+              <div class="relative w-full aspect-video overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop" alt="Investocarto Values" class="w-full h-full object-cover" />
+              </div>
+            </div>
+
+            <!-- Right: Text -->
+            <div class="w-full lg:w-1/2 flex flex-col justify-center py-6">
+              <h2 class="font-heading text-3xl md:text-4xl lg:text-4xl font-bold tracking-tight text-slate-900 mb-5">
+                Our <span class="bg-gradient-to-b from-blue-600 to-blue-400 bg-clip-text text-transparent">Values</span>
+              </h2>
+              <p class="text-lg text-slate-500 leading-relaxed max-w-lg">
+                We believe in absolute transparency, relentless speed, and putting the retail investor first. By stripping away hidden fees and engineering our systems for millisecond execution, we ensure that you always know exactly what you're paying for and have the tools necessary to tip the scales back in your favor.
+              </p>
+            </div>
+          </div>
+
+          <!-- Block 2: Our Mission (Image Right) -->
+          <div class="flex flex-col lg:flex-row-reverse items-center gap-10 lg:gap-12">
+            <!-- Right: Image -->
+            <div class="w-full lg:w-1/2">
+              <div class="relative w-full aspect-video overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1200&auto=format&fit=crop" alt="Investocarto Mission" class="w-full h-full object-cover" />
+              </div>
+            </div>
+
+            <!-- Left: Text -->
+            <div class="w-full lg:w-1/2 flex flex-col justify-center py-6">
+              <h2 class="font-heading text-3xl md:text-4xl lg:text-4xl font-bold tracking-tight text-slate-900 mb-5">
+                Our <span class="bg-gradient-to-b from-blue-600 to-blue-400 bg-clip-text text-transparent">Mission</span>
+              </h2>
+              <p class="text-lg text-slate-500 leading-relaxed max-w-lg">
+                To democratize institutional-grade financial infrastructure for everyone. We bridge the gap between Wall Street's advanced technology and the everyday retail investor. No compromises, no hidden fees, just raw, unprecedented market access.
+              </p>
+            </div>
+          </div>
+
+          <!-- Block 3: Our Vision (Image Left) -->
+          <div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-12">
+            <!-- Left: Image -->
+            <div class="w-full lg:w-1/2">
+              <div class="relative w-full aspect-video overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop" alt="Investocarto Vision" class="w-full h-full object-cover" />
+              </div>
+            </div>
+
+            <!-- Right: Text -->
+            <div class="w-full lg:w-1/2 flex flex-col justify-center py-6">
+              <h2 class="font-heading text-3xl md:text-4xl lg:text-4xl font-bold tracking-tight text-slate-900 mb-5">
+                Our <span class="bg-gradient-to-b from-blue-600 to-blue-400 bg-clip-text text-transparent">Vision</span>
+              </h2>
+              <p class="text-lg text-slate-500 leading-relaxed max-w-lg">
+                A world where financial markets are truly open and equitable. We envision a trading landscape where your success is determined entirely by your strategy, rather than the limitations of your broker's technology.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Detailed Content Section (70/30 Layout) -->
+      <section class="w-full relative bg-slate-200 text-slate-700 py-24 md:py-32 overflow-hidden">
+        <!-- Background Image (Anchored to the right to guarantee visibility) -->
+        <div class="absolute inset-y-0 right-0 w-full md:w-[50%] lg:w-[45%] z-0">
+          <!-- Gradient mask fading seamlessly into the solid background on the left -->
+          <div class="absolute inset-0 bg-gradient-to-r from-slate-200 via-slate-200/70 to-transparent hidden md:block z-10"></div>
+          <!-- Full dark overlay on mobile -->
+          <div class="absolute inset-0 bg-slate-200/95 md:hidden z-10"></div>
+          
+          <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?q=80&w=2400&auto=format&fit=crop" alt="Wealth and Finance" class="w-full h-full object-cover object-left" />
+        </div>
+
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
+          <div class="flex flex-col md:flex-row">
+            <!-- Content Column -->
+            <div class="w-full md:w-[75%] lg:w-[70%] md:pr-12">
+              
+              <!-- Main Title -->
+              <h2 class="font-heading text-4xl md:text-5xl font-bold tracking-tight text-slate-900 mb-8">
+                The Anatomy of an Edge
+              </h2>
+              
+              <!-- 3 Paragraphs -->
+              <div class="space-y-6 text-lg leading-relaxed mb-12 text-slate-700">
+                <p>
+                  In modern financial markets, an edge is not found in a single indicator or a hot tip; it is cultivated through a disciplined framework and executed via relentless technology. We believe that successful retail trading requires adopting the exact same mindset utilized by institutional desks.
+                </p>
+                <p>
+                  The first pillar of this mindset is absolute detachment. Emotional capital is just as finite as financial capital. By systematizing your approach and trusting your infrastructure, you remove the psychological friction that often leads to catastrophic drawdowns.
+                </p>
+                <p>
+                  However, a disciplined framework is useless if your execution environment is flawed. Slippage, latency, and hidden routing fees erode your theoretical edge before it ever reaches the market. This is why we focus heavily on the mechanical realities of trading.
+                </p>
+              </div>
+
+              <!-- Bullet Points -->
+              <ul class="list-disc pl-6 space-y-2 mb-12 text-lg text-slate-700">
+                <li><strong class="text-slate-900 font-semibold">Trade Reality, Not Opinion:</strong> Markets can remain irrational longer than you can remain solvent. React to price action, not narratives.</li>
+                <li><strong class="text-slate-900 font-semibold">Manage Risk Ruthlessly:</strong> Position sizing and stop-loss discipline are the only true protections against tail-risk events.</li>
+                <li><strong class="text-slate-900 font-semibold">Microseconds Matter:</strong> When trading volume surges, queue position dictates fill quality. Speed is a primary risk management tool.</li>
+              </ul>
+
+              <!-- Subheading -->
+              <h3 class="font-heading text-2xl md:text-3xl font-bold tracking-tight text-slate-900 mb-6">
+                The Infrastructure Advantage
+              </h3>
+              
+              <!-- 2 Paragraphs -->
+              <div class="space-y-6 text-lg leading-relaxed text-slate-700">
+                <p>
+                  To support this philosophy, Investocarto was engineered from the bare metal up. We bypass traditional, bloated brokerage intermediaries and connect directly to primary liquidity pools. This means your orders are routed instantly, securing optimal queue positions and minimizing adverse selection.
+                </p>
+                <p>
+                  Our architecture is built on the same low-latency protocols used by high-frequency firms. By democratizing access to this level of infrastructure, we empower you to execute your strategies precisely as designed, transforming theoretical edge into realized alpha.
+                </p>
+              </div>
+
+            </div>
+
+            <!-- Empty Column to force text to left while maintaining grid logic -->
+            <div class="hidden lg:block lg:w-[30%]"></div>
+          </div>
+        </div>
+      </section>
+      <!-- CTA Section -->
+      <section class="w-full pt-20 pb-24 md:pt-24 md:pb-28 bg-background relative overflow-hidden border-t border-border">
+        <!-- Animated Background Blobs -->
+        <div class="absolute inset-0 pointer-events-none z-0 opacity-80">
+          <!-- Left Blob -->
+          <div class="absolute top-1/2 -left-48 w-[600px] h-[600px] -translate-y-1/2 bg-blue-400/40 rounded-full blur-[120px] animate-blob"></div>
+          <!-- Right Blob -->
+          <div class="absolute top-1/2 -right-48 w-[600px] h-[600px] -translate-y-1/2 bg-purple-400/40 rounded-full blur-[120px] animate-blob animation-delay-2000"></div>
+        </div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 flex flex-col items-center">
+          <h2 class="font-heading text-4xl md:text-5xl font-bold tracking-tight max-w-3xl mb-6 mx-auto">
+            <span class="bg-gradient-to-b from-slate-900 to-slate-500 bg-clip-text text-transparent">Ready to take control?</span>
+          </h2>
+          <p class="max-w-2xl mx-auto text-lg md:text-xl text-muted-foreground mb-10 leading-relaxed">
+            Join thousands of retail investors trading smarter with <span class="relative font-bold text-slate-900 z-10 whitespace-nowrap">Investocarto<svg class="absolute -bottom-2.5 left-0 w-full h-3 text-blue-500 stroke-current -z-10" viewBox="0 0 100 20" preserveAspectRatio="none"><path fill="none" stroke-width="4" stroke-linecap="round" d="M2,15 Q25,5 50,15 T98,15" style="stroke-dasharray: 120; stroke-dashoffset: 120; animation: draw-line 2s ease-in-out infinite alternate;" /></svg></span>.<br class="hidden sm:block" />
+            Sign up in minutes and never pay hidden fees again.
+          </p>
+          <a href="#" class="inline-flex h-14 items-center justify-center rounded-full bg-gradient-to-b from-blue-500 to-blue-600 bg-[length:100%_200%] bg-top px-10 text-lg font-bold text-white shadow-[0_8px_20px_rgb(37_99_235_/_0.3)] transition-all duration-500 hover:bg-bottom hover:-translate-y-1 hover:shadow-[0_12px_24px_rgb(37_99_235_/_0.4)] active:translate-y-0 focus-ring group">
+            Unlock Your Free Account <i data-lucide="arrow-right" class="ml-2 w-5 h-5 group-hover:animate-[arrow-float_1s_ease-in-out_infinite]"></i>
+          </a>
+          <p class="mt-6 text-sm text-muted-foreground/80">No hidden fees. Cancel anytime.</p>
+        </div>
+      </section>
+      
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="w-full border-t border-border bg-background py-12 md:py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+          <div class="md:col-span-1">
+            <div class="flex items-center gap-2 mb-4">
+              <div class="flex h-6 w-6 items-center justify-center rounded bg-primary text-white">
+                <i data-lucide="trending-up" class="h-4 w-4"></i>
+              </div>
+              <span class="font-heading text-lg font-bold text-primary">investocarto</span>
+            </div>
+            <p class="text-sm text-muted-foreground leading-relaxed">
+              Empowering retail investors with transparent, accessible, and powerful trading tools.
+            </p>
+          </div>
+          <div>
+            <h3 class="font-semibold text-foreground mb-4">Platform</h3>
+            <ul class="space-y-3 text-sm text-muted-foreground">
+              <li><a href="#" class="hover:text-foreground transition-colors focus-ring">Pricing</a></li>
+              <li><a href="#" class="hover:text-foreground transition-colors focus-ring">Features</a></li>
+              <li><a href="#" class="hover:text-foreground transition-colors focus-ring">Web Trading</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold text-foreground mb-4">Company</h3>
+            <ul class="space-y-3 text-sm text-muted-foreground">
+              <li><a href="#" class="hover:text-foreground transition-colors focus-ring">About Us</a></li>
+              <li><a href="#" class="hover:text-foreground transition-colors focus-ring">Careers</a></li>
+              <li><a href="#" class="hover:text-foreground transition-colors focus-ring">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold text-foreground mb-4">Support</h3>
+            <ul class="space-y-3 text-sm text-muted-foreground">
+              <li><a href="#" class="hover:text-foreground transition-colors focus-ring">Help Center</a></li>
+              <li><a href="#" class="hover:text-foreground transition-colors focus-ring">On-Demand Call</a></li>
+              <li><a href="#" class="hover:text-foreground transition-colors focus-ring">Terms of Service</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-muted-foreground">
+          <p>&copy; 2026 Investocarto. All rights reserved.</p>
+          <div class="flex gap-4">
+            <a href="#" aria-label="Twitter" class="hover:text-foreground focus-ring"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+            <a href="#" aria-label="LinkedIn" class="hover:text-foreground focus-ring"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+            <a href="#" aria-label="Instagram" class="hover:text-foreground focus-ring"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+      lucide.createIcons();
+    </script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
